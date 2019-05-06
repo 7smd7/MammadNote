@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="signupPane" cacheShape="false" centerShape="false" depthTest="DISABLE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="300.0" prefWidth="300.0" scaleShape="false" styleClass="background" stylesheets="@nightmode.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerSignup">
+   <children>
+      <TextField fx:id="txtUser" layoutX="47.0" layoutY="162.0" promptText="username" styleClass="text-field" />
+      <PasswordField fx:id="txtPass" layoutX="47.0" layoutY="208.0" promptText="password" />
+      <Button layoutX="47.0" layoutY="253.0" mnemonicParsing="false" onAction="#Signup" text="sign up" />
+      <ImageView fx:id="profilePic" fitHeight="137.0" fitWidth="241.0" layoutX="47.0" layoutY="18.0" onMouseClicked="#picChooser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.duckduckgo.com.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Button layoutX="163.0" layoutY="253.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</Pane>
