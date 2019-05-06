@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" styleClass="background"  stylesheets="@nightmode.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="35.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@checkmark.png" />
+         </image>
+      </ImageView>
+      <Label ellipsisString="Your done signup seccesfully..." layoutX="256.0" layoutY="59.0" prefHeight="28.0" prefWidth="107.0" scaleX="2.0" scaleY="2.0" text="congratulation!" />
+      <Label layoutX="271.0" layoutY="108.0" prefHeight="28.0" prefWidth="275.0" scaleX="1.5" scaleY="1.5" text="Your done signup seccesfully..." />
+   </children>
+</Pane>

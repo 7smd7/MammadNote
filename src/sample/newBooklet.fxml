@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" styleClass="background" stylesheets="@nightmode.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerNewBooklet">
+   <children>
+      <ImageView fx:id="bookletPic" fitHeight="139.0" fitWidth="150.0" layoutX="81.0" layoutY="21.0" onMouseClicked="#picChooser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@booklet.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtName" layoutX="48.0" layoutY="180.0" promptText="Bookelet's name" />
+      <Button layoutX="48.0" layoutY="240.0" mnemonicParsing="false" onAction="#newBooklet" text="submit" />
+      <Button layoutX="165.0" layoutY="240.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
+   </children>
+</AnchorPane>

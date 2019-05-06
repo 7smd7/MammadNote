@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="305.0" prefWidth="305.0" styleClass="background" stylesheets="@nightmode.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerChangePass">
+   <children>
+      <Button layoutX="104.0" layoutY="258.0" mnemonicParsing="false" onAction="#change" text="Change" />
+      <Label fx:id="lbl2" layoutX="86.0" layoutY="122.0" prefHeight="21.0" prefWidth="149.0" text="There aren't same..." textAlignment="CENTER" visible="false" />
+      <Label fx:id="lbl1" layoutX="68.0" layoutY="17.0" prefHeight="21.0" prefWidth="172.0" text="Old password is incorrect" visible="false" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="65.0" />
+      <PasswordField fx:id="txtOldPass" layoutX="50.0" layoutY="46.0" promptText="old password" />
+      <PasswordField fx:id="txtNewPass" layoutX="50.0" layoutY="148.0" promptText="new password" />
+      <PasswordField fx:id="txtAgainPass" layoutX="50.0" layoutY="198.0" promptText="type again" />
+      <Label fx:id="lbl3" layoutX="95.0" layoutY="94.0" text="It is same as last" visible="false" />
+   </children>
+</AnchorPane>
